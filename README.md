@@ -1,2 +1,2 @@
 # hwayu.github.io
-hgh
+hi~
