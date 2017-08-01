@@ -26,7 +26,7 @@ $(document).ready(function() {
                 app.timer();
             },
             timer: function() {
-                var time = 0
+                var time = -5
 
                 var time = setInterval(myMethod, 1000);
 
@@ -38,6 +38,7 @@ $(document).ready(function() {
                     window.bar1 = time;
 
                 }
+
                 app.clickHandlers();
             },
 
@@ -80,8 +81,8 @@ $(document).ready(function() {
                 if ($('.unmatched').length === 0) {
                     alert("所花時間 " + bar1 + "秒")
 
-                    $('.container').html('<h1>恭喜!遊戲結束~</h1>').html('<div > < img src = "./poker/back.png " > < /div> ');
-                    //想放照片
+                    $('.container').html('<h1>恭喜!遊戲結束~</h1>') //想放照片
+                        //.html('<div > < img src = "./poker/back.png " > < /div> ')
 
 
 
