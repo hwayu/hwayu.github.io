@@ -81,7 +81,7 @@ $(document).ready(function() {
                 if ($('.unmatched').length === 0) {
                     alert("所花時間 " + bar1 + "秒")
 
-                    $('.container').html('<h1>恭喜!遊戲結束~</h1>')
+                    $('.container').html('<h1>恭喜!挑戰成功~</h1>')
                         //想放照片'<div > < img src = "./poker / back.png " > < /div> ')
 
 
