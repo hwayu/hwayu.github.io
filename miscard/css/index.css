@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    /* 設定背景顏色 */
+    background-color: #22d3da;
+    /* 設定文字顏色 */
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+}
+
+.card {
+    float: left;
+    margin: 10px;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    background: lightblue;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #ccc;
+}
+
+.card:hover {
+    cursor: pointer;
+    border: 3px solid blue;
+}
+
+.card p {
+    font-size: 48px;
+    color: blue;
+}

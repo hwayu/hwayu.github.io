@@ -26,7 +26,7 @@ $(document).ready(function() {
                 app.timer();
             },
             timer: function() {
-                var time = -5
+                var time = 0
 
                 var time = setInterval(myMethod, 1000);
 
@@ -38,7 +38,6 @@ $(document).ready(function() {
                     window.bar1 = time;
 
                 }
-
                 app.clickHandlers();
             },
 
@@ -48,9 +47,9 @@ $(document).ready(function() {
                 $('.card').on('click', function() {
                     var v = $(this).data('cardValue')
                     console.log(v) //換成撲克牌
-                    $(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected').attr('src', './poker/pic' + v + '.png ')
+                    $(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected')
 
-
+                    $("img").attr('src', './poker/pic' + v + '.png ');
                     app.checkMatch();
 
                 });
@@ -70,7 +69,8 @@ $(document).ready(function() {
                     } else {
                         setTimeout(function() {
                             $('.selected').each(function() {
-                                $("img").attr('src', './poker/back.png')
+
+                                $("img").attr('src', './poker/back.png');
                                 $(this).html('').removeClass('selected');
                             });
                         }, 1000);
@@ -81,8 +81,8 @@ $(document).ready(function() {
                 if ($('.unmatched').length === 0) {
                     alert("所花時間 " + bar1 + "秒")
 
-                    $('.container').html('<h1>恭喜!遊戲結束~</h1>') //想放照片
-                        //.html('<div > < img src = "./poker/back.png " > < /div> ')
+                    $('.container').html('<h1>恭喜!遊戲結束~</h1>')
+                        //想放照片'<div > < img src = "./poker / back.png " > < /div> ')
 
 
 
