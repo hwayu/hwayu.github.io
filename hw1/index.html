@@ -17,33 +17,44 @@
 
         <div class="jumbotron ">
             <h1>預測長大後身高</h>
-        </div>
 
-        <div class="form-group row ">
-            <label for="example-number-input " class="col-2 col-form-label " ;>父親身高 (公分)</label>
-            <div class="col-10 ">
-                <input class="form-control " type="number " value="185 " id="dad">
+        </div>
+        <blockquote>
+            <p>快來看看自己長大後的身高吧</p>
+
+        </blockquote>
+        <div id="sidebar">
+            <div class="form-group row ">
+                <label for="example-number-input">父親身高 (公分):</label>
+                <div class="col-10 ">
+                    <input class="form-control " type="number" value="185" id="dad">
+                </div>
             </div>
-        </div>
-        <div class="form-group row ">
-            <label for="example-number-input " class="col-2 col-form-label ">母親身高 (公分)</label>
-            <div class="col-10 ">
-                <input class="form-control " type="number " value="165 " id="mom">
+            <div class="form-group row ">
+                <label for="example-number-input">母親身高 (公分):</label>
+                <div class="col-10 ">
+                    <input class="form-control " type="number" value="165" id="mom">
+                </div>
             </div>
-        </div>
+            <div class="form-group row ">
+                <label for="male">男孩</label>
+                <input type="radio" name="gender" id="male" value="male"><br>
+                <label for="female">女孩</label>
+                <input type="radio" name="gender" id="female" value="female"><br> </div>
+            <button type="button" class="btn btn-primary ">計算</button>
 
-        <button type="button " class="btn btn-primary ">計算</button>
-
-        <div class="form-group row ">
-            <label for="example-number-input " class="col-2 col-form-label ">計算結果</label>
-            <div class="col-10 ">
-                <input class="form-control" type="number" id="result">
+            <div class="form-group row ">
+                <label for="example-number-input ">計算結果:</label>
+                <div class="col-10 ">
+                    <input class="form-control" type="number" id="result">
+                </div>
             </div>
         </div>
         <div class="bg">
 
             <img src=" ./image/01.jpg " alt=" "> </div>
     </div>
+
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

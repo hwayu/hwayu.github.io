@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("#btn1").click(function() {
         var app = {
+            totalTime: 0,
             cards: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6],
             init: function() {
 
@@ -28,14 +29,14 @@ $(document).ready(function() {
             timer: function() {
                 var time = 0
 
-                var time = setInterval(myMethod, 1000);
+                var timer = setInterval(myMethod, 1000);
 
                 function myMethod() {
                     time = time + 1
 
                     $('#result').val(time);
 
-                    window.bar1 = time;
+                    app.totalTime = time;
 
                 }
                 app.clickHandlers();
@@ -45,11 +46,11 @@ $(document).ready(function() {
 
             clickHandlers: function() {
                 $('.card').on('click', function() {
-                    var v = $(this).data('cardValue')
+                    var v = $(this).data('card-value');
                     console.log(v) //換成撲克牌
-                    $(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected')
-
-                    $("img").attr('src', './poker/pic' + v + '.png ');
+                        //$(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected')
+                    $(this).addClass('selected');
+                    $(this).find('img').attr('src', './poker/pic' + v + '.png');
                     app.checkMatch();
 
                 });
@@ -70,8 +71,8 @@ $(document).ready(function() {
                         setTimeout(function() {
                             $('.selected').each(function() {
 
-                                $("img").attr('src', './poker/back.png');
-                                $(this).html('').removeClass('selected');
+                                $(this).find('img').attr('src', './poker/back.png');
+                                $(this).removeClass('selected');
                             });
                         }, 1000);
                     }
@@ -79,10 +80,12 @@ $(document).ready(function() {
             },
             checkWin: function() {
                 if ($('.unmatched').length === 0) {
-                    alert("所花時間 " + bar1 + "秒")
+                    //alert("所花時間 " + bar1 + "秒")
 
-                    $('.container').html('<h1>恭喜!挑戰成功~</h1>')
-                        //想放照片'<div > < img src = "./poker / back.png " > < /div> ')
+                    $img = $('<img>').attr('src', './poker/images.jpg');
+                    $p = $('<p>').text('所花時間' + app.totalTime + '秒');
+                    $('#output').append($p).append($img);
+                    //先p then img
 
 
 

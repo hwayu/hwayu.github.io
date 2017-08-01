@@ -7,7 +7,7 @@
                                         font-family: impact;
                                     }
                                     
-                                    <style>.bg {
+                                    .bg {
                                         position: fixed;
                                         top: 0;
                                         left: 0;
@@ -19,4 +19,36 @@
                                     .bg img {
                                         min-height: 100%;
                                         width: 100%;
+                                    }
+                                    
+                                    #sidebar {
+                                        float: left;
+                                    }
+                                    
+                                    input[type="number"] {
+                                        width: 100px;
+                                    }
+                                    
+                                    .col-form-label {
+                                        width: 200px;
+                                        height: 150px;
+                                        text-align: center;
+                                    }
+                                    
+                                    blockquote {
+                                        color: blue;
+                                        text-align: center;
+                                    }
+                                    
+                                    .button {
+                                        background-color: #4CAF50;
+                                        border: none;
+                                        color: white;
+                                        padding: 15px 32px;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        display: inline-block;
+                                        font-size: 16px;
+                                        margin: 4px 2px;
+                                        cursor: pointer;
                                     }
