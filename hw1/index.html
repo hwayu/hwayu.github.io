@@ -15,59 +15,69 @@
 
     <div class=" container ">
 
-        <div class="jumbotron ">
-            <h1>預測長大後身高</h>
+        <div class="jumbotron">
+            <h1><br/><br/><br><br/>預測長大後身高&nbsp; </h>
+                <div class="form-group row " id="info">
+                    <blockquote>
+                        &nbsp;依據公式:男孩:(父+母+12)/2;女孩:(父+母-12)/2&nbsp;<br/> &nbsp;參考標準:男生平均身高:174.5公分;女生平均身高:161.5公分
+                    </blockquote>
+                    <img id="girl" src=" ./image/02.jpg " alt=" ">
+                </div>
+
 
         </div>
-        <blockquote>
-            <p>快來看看自己長大後的身高吧</p>
+        <div class="form-group row " id="all">
 
-        </blockquote>
-        <div id="sidebar">
-            <div class="form-group row ">
-                <label for="example-number-input">父親身高 (公分):</label>
-                <div class="col-10 ">
-                    <input class="form-control " type="number" value="185" id="dad">
+            <div>
+                <div id="sidebar">
+                    <div class="form-group row ">
+                        <label for="example-number-input">父親身高 (公分):</label>
+                        <div class="col-10 ">
+                            <input class="form-control " type="number" value="185" id="dad">
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <label for="example-number-input">母親身高 (公分):</label>
+                        <div class="col-10 ">
+                            <input class="form-control " type="number" value="165" id="mom">
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <label for="male">男孩</label>
+                        <input type="radio" name="gender" id="male" value="male"><br>
+                        <label for="female">女孩</label>
+                        <input type="radio" name="gender" id="female" value="female"><br> </div>
+                    <button type="button" class="btn btn-primary ">計算</button>
+
+                    <div class="form-group row ">
+                        <label for="example-number-input ">計算結果:</label>
+                        <div class="col-10 ">
+                            <input class="form-control" type="number" id="result">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg">
+
+                    <img src=" ./image/01.jpg " alt=" ">
+                    <div>
+                    </div>
                 </div>
             </div>
-            <div class="form-group row ">
-                <label for="example-number-input">母親身高 (公分):</label>
-                <div class="col-10 ">
-                    <input class="form-control " type="number" value="165" id="mom">
-                </div>
-            </div>
-            <div class="form-group row ">
-                <label for="male">男孩</label>
-                <input type="radio" name="gender" id="male" value="male"><br>
-                <label for="female">女孩</label>
-                <input type="radio" name="gender" id="female" value="female"><br> </div>
-            <button type="button" class="btn btn-primary ">計算</button>
-
-            <div class="form-group row ">
-                <label for="example-number-input ">計算結果:</label>
-                <div class="col-10 ">
-                    <input class="form-control" type="number" id="result">
-                </div>
-            </div>
-        </div>
-        <div class="bg">
-
-            <img src=" ./image/01.jpg " alt=" "> </div>
-    </div>
 
 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+            <!-- jQuery first, then Tether, then Bootstrap JS. -->
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 
 
 
 
-    <!-- 引入我們自己寫的 JavaScript -->
-    <script src="./js/index.js "></script>
+            <!-- 引入我們自己寫的 JavaScript -->
+            <script src="./js/index.js "></script>
 </body>
 
 </html>

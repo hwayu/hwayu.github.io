@@ -1,54 +1,77 @@
-                                    .jumbotron {
-                                        background-color: #00FFFF;
-                                        color: white;
-                                    }
-                                    
-                                    p {
-                                        font-family: impact;
-                                    }
-                                    
-                                    .bg {
-                                        position: fixed;
-                                        top: 0;
-                                        left: 0;
-                                        bottom: 0;
-                                        right: 0;
-                                        z-index: -999;
-                                    }
-                                    
-                                    .bg img {
-                                        min-height: 100%;
-                                        width: 100%;
-                                    }
-                                    
-                                    #sidebar {
-                                        float: left;
-                                    }
-                                    
-                                    input[type="number"] {
-                                        width: 100px;
-                                    }
-                                    
-                                    .col-form-label {
-                                        width: 200px;
-                                        height: 150px;
-                                        text-align: center;
-                                    }
-                                    
-                                    blockquote {
-                                        color: blue;
-                                        text-align: center;
-                                    }
-                                    
-                                    .button {
-                                        background-color: #4CAF50;
-                                        border: none;
-                                        color: white;
-                                        padding: 15px 32px;
-                                        text-align: center;
-                                        text-decoration: none;
-                                        display: inline-block;
-                                        font-size: 16px;
-                                        margin: 4px 2px;
-                                        cursor: pointer;
-                                    }
+               body {
+                   color: #1a1918;
+               }
+               
+               .jumbotron {
+                   margin-top: 0px;
+                   margin-left: 0px;
+                   margin-right: 0px;
+                   background-color: #795548;
+                   color: white;
+                   height: 600px;
+                   border-radius: 25px;
+               }
+               
+               #girl {
+                   height: 600px;
+                   width: 540px;
+                   margin-top: 0px;
+                   position: absolute;
+                   top: 0px;
+                   right: 0px;
+                   border-radius: 25px;
+               }
+               
+               p {
+                   font-family: impact;
+               }
+               
+               input[type="number"] {
+                   width: 100px;
+               }
+               
+               .col-form-label {
+                   width: 200px;
+                   height: 150px;
+                   text-align: center;
+               }
+               
+               #info {
+                   color: purple
+               }
+               
+               blockquote {
+                   text-align: center;
+                   font-size: 18px;
+                   color: white;
+                   opacity: 0.7;
+                   margin: 15px;
+                   border-radius: 25px;
+               }
+               
+               .button {
+                   background-color: #4CAF50;
+                   border: none;
+                   color: white;
+                   padding: 15px 32px;
+                   text-align: center;
+                   text-decoration: none;
+                   display: inline-block;
+                   font-size: 16px;
+                   margin: 4px 2px;
+                   cursor: pointer;
+               }
+               
+               .bg {
+                   position: fixed;
+                   top: 0;
+                   left: 0;
+                   bottom: 0;
+                   right: 0;
+                   z-index: -999;
+               }
+               
+               .bg img {
+                   min-height: 100%;
+                   width: 100%;
+               }
