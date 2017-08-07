@@ -9,13 +9,17 @@
 
 .jumbotron {
     /* 設定背景顏色 */
-    background-color: #22d3da;
+    background-color: #7f248f;
     /* 設定文字顏色 */
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    color: inherit;
+}
+
+.jumbotron.p {
+    font-size: 20px;
+    color: blueviolet;
 }
 
 label {
@@ -32,6 +36,7 @@ label {
     margin-left: -15px;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .card {
@@ -39,8 +44,6 @@ label {
     margin: 10px;
     height: 200px;
     width: 150px;
-    text-align: center;
-    background: lightblue;
     border-radius: 5px;
     box-shadow: 10px 10px 10px #ccc;
 }
@@ -49,18 +52,6 @@ label {
     cursor: pointer;
     border: 3px solid purple;
 }
-
-
-/* #output {
-    height: 200px;
-    width: 150px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -999;
-} */
 
 #output img {
     min-height: 400px;
@@ -71,14 +62,19 @@ label {
     font-size: 20px;
 }
 
+#output h2 {
+    color: red;
+}
+
 #section1 {
     padding-top: 50px;
     height: 560px;
 }
 
-#section1.p {
+#section1 p {
     font-size: 24px;
-    color: purple
+    color: purple;
+    margin: 15px;
 }
 
 #field {
@@ -111,4 +107,8 @@ label {
     ;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.container h1 {
+    color: blue;
 }

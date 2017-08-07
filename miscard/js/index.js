@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    $('.button').click(function() { //使button只能按一次}
+    $('.button').click(function() { //使button只能按一次
         $(this).prop('disabled', true);
         var app = {
             totalTime: 0,
             cards: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6],
             init: function() {
-
+                //洗牌
                 app.shuffle();
             },
             shuffle: function() {
@@ -26,7 +26,7 @@ $(document).ready(function() {
                     $(this).attr('data-card-value', app.cards[index]);
                 });
                 app.timer();
-            },
+            }, //計時
             timer: function() {
                 var time = 0
 
@@ -37,7 +37,8 @@ $(document).ready(function() {
 
                     $('#result').val(time);
 
-                    app.totalTime = time; //傳到totaltime
+                    //傳到totaltime
+                    app.totalTime = time;
 
                 }
                 app.clickHandlers();
@@ -46,11 +47,13 @@ $(document).ready(function() {
 
 
             clickHandlers: function() {
-                $('.card').on('click', function() { //確保一次最多只有兩張牌被翻起
+                $('.card').on('click', function() {
+                    //確保一次最多只有兩張牌被翻起
                     if ($('.selected').length < 2) {
                         var v = $(this).data('card-value');
                         console.log(v)
                         $(this).addClass('selected');
+                        //find可換成children
                         $(this).find('img').attr('src', './poker/pic' + v + '.png');
                         app.checkMatch();
 
@@ -61,7 +64,7 @@ $(document).ready(function() {
                 if ($('.selected').length === 2) {
                     if ($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) {
                         $('.selected').each(function() {
-                            $(this).animate({
+                            $(this).animate({ //不透明度為0
                                 opacity: 0
                             }).removeClass('unmatched');
                         });
@@ -69,7 +72,7 @@ $(document).ready(function() {
                             $(this).removeClass('selected');
                         });
                         app.checkWin();
-                    } else {
+                    } else { //翻回去
                         setTimeout(function() {
                             $('.selected').each(function() {
 
@@ -83,16 +86,17 @@ $(document).ready(function() {
             checkWin: function() {
                 if ($('.unmatched').length === 0) {
                     alert("所花時間 " + app.totalTime + "秒")
-                    $('.container').html('<h1>恭喜!挑戰成功~</h1>')
+                    $h2 = $('<h2>').addClass("title").text('恭喜挑戰成功');
                     $img = $('<img>').attr('src', './poker/images.jpg');
                     $p = $('<p>').text('所花時間' + app.totalTime + '秒');
                     //加入按鈕重整
                     $input = $('<input>').attr({
                         type: "button",
                         id: "field",
-                        value: "再玩一次"
+                        value: "再玩一次",
+                        class: 'btn-warning'
                     }); //先p then img,input
-                    $('#output').append($p).append($img).append($input);
+                    $('#output').append($h2).append($p).append($img).append($input);
                     //重整頁面
                     $('#field').on('click', function() {
                         window.location.reload();
