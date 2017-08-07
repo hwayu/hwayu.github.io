@@ -5,7 +5,7 @@ $('#insert').on('click', function() {
             count: +$('#InputProductCount').val(),
             image: $('#InputProductImage').val()
         }
-        $.post("http://js2017-hw2.kchen.club/insert", data, function(response) {
+        $.post("https://js2017-hw2.kchen.club/insert", data, function(response) {
             if (response) {
                 if (response.result) {
                     $('#message').text('新增成功');
@@ -26,7 +26,7 @@ $('#search').on('click', function() {
     var results = [];
     var m = $('#keyword').val();
     console.log(m);
-    $.get("http://js2017-hw2.kchen.club/query", function(response) {
+    $.get("https://js2017-hw2.kchen.club/query", function(response) {
         for (var i = 0; i < response.data.length; i++) {
             //Array.indexOf ()方法是用來搜尋陣列中的元素，若是匹配成功則傳回該元素所在位置的索引，失敗則傳回-1,!=是不等於
             if (response.data[i].name.indexOf(m) != -1) {
@@ -45,7 +45,7 @@ $('#search').on('click', function() {
 })
 $('#query').on('click', function() {
     $(this).prop('disabled', true);
-    $.get("http://js2017-hw2.kchen.club/query", function(response) {
+    $.get("https://js2017-hw2.kchen.club/query", function(response) {
         if (response) {
             if (response.result) {
                 // TODO HW2 作業寫在這裡
