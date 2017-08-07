@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('.button').click(function() { //想使button只能按一次}
-        $(this).addClass("disabled");
+    $('.button').click(function() { //使button只能按一次}
+        $(this).prop('disabled', true);
         var app = {
             totalTime: 0,
             cards: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6],
@@ -89,17 +89,18 @@ $(document).ready(function() {
                     //加入按鈕重整
                     $input = $('<input>').attr({
                         type: "button",
-                        id: "field"
-                    });
+                        id: "field",
+                        value: "再玩一次"
+                    }); //先p then img,input
                     $('#output').append($p).append($img).append($input);
-                    $('#field').click, (function() {
-                        location.reload();
-                        console.log(2)
-                    })
-                }
-                //先p then img
-            }
+                    //重整頁面
+                    $('#field').on('click', function() {
+                        window.location.reload();
 
+                    });
+                }
+
+            }
         };
         app.init();
 

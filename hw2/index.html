@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作業二 - 電商前端應用</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- 引入我們自己寫的 CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>作業二 - 電商前端應用</h1>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">查詢</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insert.html">新增</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="form-group row ">
+            <label for="example-number-input">關鍵字搜尋:</label>
+            <div class="col-5">
+                <input class="form-control " id="keyword">
+            </div> <button id="search">搜尋</button>
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <button id="query" class="btn btn-primary">查詢</button>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div id="product-list" class="row justify-content-around">
+            -
+            <!--<div class="col-*">
+                <div class="item">
+                    <img class="thumb" src="http://fakeimg.pl/160/?text=images">
+                    <h3 class="title">小米手環 2</h3>
+                    <p class="price">NT$ 865</p>
+                </div>
+            </div>
+            <div class="col-*">
+                <div class="item">
+                    <img class="thumb" src="http://fakeimg.pl/160/?text=images">
+                    <h3 class="title">小米手環 2</h3>
+                    <p class="price">NT$ 865</p>
+                </div>
+            </div>
+            <div class="col-*">
+                <div class="item">
+                    <img class="thumb" src="http://fakeimg.pl/160/?text=images">
+                    <h3 class="title">小米手環 2</h3>
+                    <p class="price">NT$ 865</p>
+                </div>
+            </div>
+            <div class="col-*">
+                <div class="item">
+                    <img class="thumb" src="http://fakeimg.pl/160/?text=image">
+                    <h3 class="title">小米手環 2</h3>
+                    <p class="price">NT$ 865</p>
+                </div>
+            </div>
+            <div class="col-*">
+                <div class="item">
+                    <img class="thumb" src="http://fakeimg.pl/160/?text=image">
+                    <h3 class="title">小米手環 2</h3>
+                    <p class="price">NT$ 865</p>
+                </div>
+            </div>-->
+        </div>
+
+        <!-- <div class="row">
+            <div class="col">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>-->
+        <div class="row">
+
+
+
+            <div id="main">
+                <div id="numbers">
+
+                </div>
+            </div><button id="allthings">全部</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <footer class="text-center">
+                    <div>© 2017 CSX1004 網頁互動程式設計 <a href="http://homepage.ntu.edu.tw/~kchen/" target="_blank">Kun Chen</a></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- 引入我們自己寫的 JavaScript -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
