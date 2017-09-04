@@ -112,3 +112,21 @@ label {
 .container h1 {
     color: blue;
 }
+
+.navbar-inverse {
+    background: linear-gradient(right, red, purple, blue);
+}
+
+.navbar-header {
+    background: -webkit-linear-gradient(left, #e82f6f 0%, #e58320 100%);
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    background: -webkit-linear-gradient(left, #4a3ab7 0%, #e82f6f 100%);
+}
+
+header {
+    background: -webkit-linear-gradient(left, #e82f6f 0%, #e58320 100%);
+}
+
+#main {}
